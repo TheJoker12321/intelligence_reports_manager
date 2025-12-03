@@ -12,14 +12,15 @@ function menu() {
             4. Delete report by ID
             5. Edit report by ID
             0. Exit
-            _________________________________`)
+            _________________________________
+            `)
         
         switch (choose) {
             case "1":
                 weapons = [cli.question("add weapon that terrorist has: ")]
                 flags = true
                 while (flags) {
-                    more_weapon = cli.question("does he has more weapons?")
+                    more_weapon = cli.question("does he has more weapons? ")
                         if (more_weapon === "yes") {
                         weapon = cli.question("print the weapon: ")
                         weapons.push(weapon)
